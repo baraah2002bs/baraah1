@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+
+bady {
+    font-family: "Quicksand", sans-serif;
+
+}
+
+ul {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+
+}
+.container {
+max-width: 1100px;
+margin: auto;
+}
+
+/*utility classes*/
+.primary-text {
+color: #e7f184;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+}
+
+.btn-primary {
+    color: #0f0f0e;
+    border: 1px solid #350231;
+}
+.btn-secondary {
+    color: #fff;
+    background: #383848;
+    margin-top: 2rem;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover  {
+    background: #e2e9a7;
+}
+
+
+/*heaber start*/
+header {
+    height: 100vh;
+    background: url('./img/صورة\ الخلفية\ للموقع12.jpg') center center/cover no-repeat;
+    position: relative;
+}
+
+#navbar {
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+#navbar {
+    display: flex;
+
+}
+
+#navbar img {
+    width: 80px;
+    margin-left: 100px;
+}
+
+#navbar ul {
+    display: flex;
+    margin-right: 100px;
+}
+
+#navbar ul li a {
+    padding: 15px 20px;
+    color: rgb(241, 229, 237);
+    font-weight: 600;
+}
+
+#navbar ul li a:hover {
+    border-bottom: 2px solid #be8d23;
+}
+
+header .content {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center ;
+    height:75% ;
+}
+
+
+
+
+header.content h1 {
+    font-size: 40px;
+    color: #fff;
+}
+
+
+header .content p {
+    margin: 20px 0 40px;
+   color: #fff;
+}
+
+header::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+background: rgb(0, 0, 0, 0.6);
+}
+
+
+header * {
+z-index: 10;
+
+}
+
+/*City of pictures*/
+/*about start*/
+
+
+#girls {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f4;
+}
+#girls .title ,
+#Photo-gallery .title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+#girls h2,
+#Photo-gallery h2,
+#gallery h2
+{
+    font-size: 40px;
+    color: #383848;
+    margin-bottom: 20px;
+}
+#girls h2 {
+    color: #383848;
+}
+
+#girls.title p {
+    font-size: 14px;
+    color: #9a9a9a;
+    font-weight: 600;
+}
+ #girls .girls-content {
+     display: flex;
+     justify-content: space-between;
+ }
+ #girls .girls-content img {
+    width: 450px;
+ }
+ #girls .girls-content p {
+    color: #9a9a9a;
+    margin-right: 7rem;
+    font-weight: 500;
+    line-height: 1.6;
+ }
+
+
+/*about end*/
+
+
+
+
+
+
+
+#Photo-gallery {
+    height:80vh;
+    display: flex;
+justify-content: center;
+background: url('img/موف0.jpeg')  center center/cover fixed;
+}
+
+#Photo-gallery h2 {
+color: #e4b95b;
+}
+#Photo-gallery .title p {
+    color: #fff;
+    font-weight: 500;
+
+}
+#Photo-gallery .Photo-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#Photo-gallery .Photo-gallery  img {
+    width: 200px;
+}
+#Photo-gallery .Photo-gallery h3 {
+    font-size: 25px;
+    margin: 15px 0;
+
+}
+#Photo-gallery .Photo-gallery p{
+    font-size: 14px;
+    padding: 0 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+#gallery {
+    background: url('img/موف\ اصلي.jpeg');
+    padding: 8rem 0 6rem;
+}
+#gallery h2 {
+    color: #0f0f0f;
+    text-align: center;
+}
+#gallery .img-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#gallery .img-gallery img {
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+    margin: 20px;
+    opacity: 0.8;
+
+}
+#gallery .img-gallery img:hover {
+    opacity: 1;
+}
+#gallery1 {
+    background: url('img/موف\ اصلي.jpeg');
+    padding: 8rem 0 6rem;
+}
+#gallery1 h2 {
+    color: #0f0f0f;
+    text-align: center;
+}
+#gallery1 .img-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#gallery1 .img-gallery img {
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+    margin: 20px;
+    opacity: 0.8;
+}
+#gallery1 .img-gallery img:hover {
+    opacity: 1;
+}
+
+#gallery2 {
+    background: url('img/موف\ اصلي.jpeg');
+    padding: 8rem 0 6rem;
+}
+#gallery2 h2 {
+    color: #141414;
+    text-align: center;
+}
+#gallery2 .img-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#gallery2 .img-gallery img {
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+    margin: 20px;
+    opacity: 0.8;
+}
+#gallery2 .img-gallery img:hover {
+    opacity: 1;
+}
+#gallery3 {
+    background: url('img/موف\ اصلي.jpeg');
+    padding: 8rem 0 6rem;
+}
+#gallery3 h2 {
+    color: #0f0f0f;
+    text-align: center;
+}
+#gallery3 .img-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#gallery3 .img-gallery img {
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+    margin: 20px;
+    opacity: 0.8;
+}
+#gallery3 .img-gallery img:hover {
+    opacity: 1;
+}
+/*contact start*/
+
+#contact {
+    padding: 5rem 0;
+    background: #f4f4f4;
+}
+#contact .container {
+    max-width: 900px;
+}
+#contact .contact-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#contact .contact-content .contact-info {
+    width: 50%;
+}
+#contact .contact-content .contact-info  div {
+    margin: 30px 0;
+    line-height: 1.7;
+}
+#contact .contact-content .contact-info  h3 {
+    font-size: 28px;
+    color: #383848;
+    margin-bottom: 10px;
+}
+#contact .contact-content .contact-info  P {
+    color: #e4b95b;
+}
+#contact .contact-content .contact-info  i {
+    color: #ece8de;
+    margin-right: 5px;
+
+}
+#contact .contact-content .contact-info a i {
+    color: #fff;
+    background-color: #383848;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+#contact .contact-content .contact-info a i:hover {
+    background: #e4b95b;
+    color: #383848;
+}
+#contact {
+    background: url('img/نهاية.png');
+    padding: 8rem 0 6rem;
+}
+form {
+    width: 50%;
+}
+form input,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 20px 15px;
+    margin: 20px 0;
+    border: none;
+    background-color: #e3e2ee;
+}
+#contact .btn {
+    background: #e4b95b;
+    color: #fff;
+cursor: pointer;
+}
+#contact .btn:hover {
+    background-color: #383848;
+}
+
+
+/*contact end*/
+#foo {
+    background: #383848;
+    text-align: center;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 14px;
+}
+#foo a {
+    color: #fff;
+}
